@@ -6,50 +6,86 @@
     <title>Helena Ribera</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: Roboto, sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
             background-color: #f4f4f9;
             color: #333;
         }
-        header {
+        .card {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             margin: 0;
         }
         p {
             font-size: 1rem;
-            margin: 5px 0;
+            margin: 5px 0 15px;
         }
-        .links {
+        p a {
+            color: #333;
+            text-decoration: underline;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-top: 20px;
         }
-        .links a {
+        .social-links a {
             text-decoration: none;
-            color: #0073e6;
-            font-size: 1rem;
-            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.05);
+            transition: background 0.3s;
         }
-        .links a:hover {
-            text-decoration: underline;
+        .social-links a:hover {
+            background: rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Helena Ribera</h1>
-        <p>Welcome to my GitHub repository website!</p>
-    </header>
-    <div class="links">
-        <a href="https://www.linkedin.com/in/hribera/" target="_blank">LinkedIn Profile</a>
+    <div class="card">
+        <img src="profile-pic.jpg" alt="Helena Ribera" class="profile-img">
+        <h1>Helena Ribera</h1>
+        <p>Senior Data Scientist at <a href="https://dribia.com" target="_blank">Dribia</a></p>
+        <div class="social-links">
+            <a href="https://github.com/hribera" target="_blank" title="GitHub">
+                <img src="https://img.icons8.com/material-rounded/24/333333/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/hribera/" target="_blank" title="LinkedIn">
+                <img src="https://img.icons8.com/material-rounded/24/333333/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://scholar.google.es/citations?user=jWTRVroAAAAJ&hl=ca&oi=ao" target="_blank" title="Google Scholar">
+                <img src="https://img.icons8.com/material-rounded/24/333333/google-scholar.png" alt="Google Scholar">
+            </a>
+            <a href="mailto:heleribera@gmail.com" target="_blank" title="Email">
+                <img src="https://img.icons8.com/material-rounded/24/333333/email.png" alt="Email">
+            </a>
+        </div>
     </div>
 </body>
 </html>
